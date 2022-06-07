@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        style="@style/TitleTextItem"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Configuración" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ptsans_bold"
+        android:layout_marginBottom="20dp"
+        android:text="Ajustes" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/widget_shape"
+        android:elevation="20dp"
+        android:layout_marginBottom="20dp" >
+
+        <ImageView
+            style="@style/ImageWidget"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/purple_shape"
+            android:src="@drawable/ic_round_perm_device_information_24"
+            app:tint="@color/white" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/widgetTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Configuración actual"/>
+
+            <TextView
+                style="@style/widgetSubtitle"
+                android:id="@+id/xipport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IP Servidor"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        android:backgroundTint="#818186"
+        app:boxCornerRadiusBottomEnd="40dp"
+        app:boxCornerRadiusBottomStart="40dp"
+        app:boxCornerRadiusTopEnd="40dp"
+        app:boxCornerRadiusTopStart="40dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/xsettipserv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:digits="0123456789."
+            android:textColor="#818186"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Puerto"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        android:backgroundTint="#818186"
+        app:boxCornerRadiusBottomEnd="40dp"
+        app:boxCornerRadiusBottomStart="40dp"
+        app:boxCornerRadiusTopEnd="40dp"
+        app:boxCornerRadiusTopStart="40dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/xsettport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:digits="0123456789."
+            android:textColor="#818186"
+            android:text="8080"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end" >
+
+        <Button
+            android:id="@+id/xreset"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_marginEnd="15dp"
+            app:icon="@drawable/ic_round_restore_24" />
+
+        <Button
+            android:id="@+id/xsavesett"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_round_save_24"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:background="@drawable/button_shape"
+            android:text="Guardar ajustes" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
