@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/serverFragment"
-        android:name="com.example.forensics.ServerFragment"
+        android:name="com.example.filetransfer.ServerFragment"
         android:label="fragment_server"
         tools:layout="@layout/fragment_server" />
     <fragment
         android:id="@+id/clientFragment"
-        android:name="com.example.forensics.ClientFragment"
+        android:name="com.example.filetransfer.ClientFragment"
         android:label="fragment_client"
         tools:layout="@layout/fragment_client" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.forensics.SettingsFragment"
+        android:name="com.example.filetransfer.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
 </navigation>

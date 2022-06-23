@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/mukta_bold"
-        android:text="ForensicsTransfer"
+        android:text="FileTransfer"
         android:textColor="@color/white"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/mukta_bold"
-            android:text="ForensicsTransfer"
+            android:text="FileTransfer"
             android:textSize="32sp" />
 
         <TextView
